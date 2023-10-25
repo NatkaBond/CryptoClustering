@@ -32,9 +32,9 @@ Use the following steps to cluster the cryptocurrencies for the best value for k
 - Create a copy of the original data and add a new column with the predicted clusters.
 - Create a scatter plot using hvPlot as follows:
 
--- Set the x-axis as "PC1" and the y-axis as "PC2".
--- Color the graph points with the labels found using K-means.
--- Add the "coin_id" column in the hover_cols parameter to identify the cryptocurrency represented by each data point.
+* Set the x-axis as "PC1" and the y-axis as "PC2".
+*  Color the graph points with the labels found using K-means.
+*   Add the "coin_id" column in the hover_cols parameter to identify the cryptocurrency represented by each data point.
 
 ### Optimize Clusters with Principal Component Analysis
 
@@ -42,7 +42,7 @@ Using the original scaled DataFrame, perform a PCA and reduce the features to th
 
 - Retrieve the explained variance to determine how much information can be attributed to each principal component and then answer the following question in your notebook:
 
--- What is the total explained variance of the three principal components?
+* What is the total explained variance of the three principal components?
 
 - Create a new DataFrame with the PCA data and set the "coin_id" index from the original DataFrame as the index for the new DataFrame.
 
@@ -58,8 +58,8 @@ Use the elbow method on the PCA data to find the best value for k using the foll
 
 - Answer the following question in your notebook:
 
--- What is the best value for k when using the PCA data?
--- Does it differ from the best k value found using the original data?
+*  What is the best value for k when using the PCA data?
+*  Does it differ from the best k value found using the original data?
   
 ### Cluster Cryptocurrencies with K-means Using the PCA Data
 
@@ -71,8 +71,8 @@ Use the following steps to cluster the cryptocurrencies for the best value for k
 - Create a copy of the DataFrame with the PCA data and add a new column to store the predicted clusters.
 - Create a scatter plot using hvPlot as follows:
 
--- Set the x-axis as "price_change_percentage_24h" and the y-axis as "price_change_percentage_7d".
--- Color the graph points with the labels found using K-means.
+* Set the x-axis as "price_change_percentage_24h" and the y-axis as "price_change_percentage_7d".
+*  Color the graph points with the labels found using K-means.
 -- Add the "coin_id" column in the hover_cols parameter to identify the cryptocurrency represented by each data point.
 
 Answer the following question:
